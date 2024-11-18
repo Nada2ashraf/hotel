@@ -1,0 +1,1261 @@
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+   
+body{
+    background-image: linear-gradient(270deg ,#000000 , #4a4a4a,#7f7f7f ,#4a4a4a,#000000 );
+    background-size: cover;
+    font-family: math;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #484848;
+}    
+
+* ::selection{
+    background: #61ccff;
+    color: #fff;
+}
+
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background: #cfcdd300; */
+    position: fixed;
+    height: 60px;
+    z-index: 1;
+    background-image: linear-gradient(180deg ,#000000 ,#000000 );
+}
+
+nav{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    border-radius: 16px;
+    background: #cfcdd300;
+}
+
+nav .nav-list {
+    display: flex;
+
+}
+
+nav .nav-item {
+    line-height: 55px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+header input{
+    display: none;
+}
+
+.btn .btn-icon {
+    color: #ffffff;
+    font-size: 24px;
+    transform: translateX(50px);
+    transition: all .3s;
+}
+
+.btn .btn-text {
+    color: #000;
+    font-size: 21px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+input:hover ~ .btn {
+    cursor: default;
+    background: #ffffff;
+}
+
+input:hover ~ .btn .btn-icon {
+    color: #000;
+    transform: translateX(-5px);
+}
+
+input:hover ~ .btn .btn-text {
+    opacity: 1;
+    transform: translateX(20px);
+    transition-delay: .2s;
+}
+
+video{
+    width: 0;
+    /* margin-top: 60px; */
+}
+
+.about {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+
+.abut{
+    display: flex;
+    justify-content: space-around;
+    height: 60VH;
+}
+ 
+.continer{
+    max-width: 60%;
+    height: 55%;
+    background: #4e5355;
+    border-radius: 50px;
+    padding: 30px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    overflow: hidden;
+    transition-duration:.5s;
+    color: white;
+    box-shadow: 0px 5px 10px 5px #003c44;
+}
+
+.continer h1{
+    color: #000;
+}
+
+.continer h1 i{
+    color: #845e50;
+}
+
+.continer:hover{
+    background: #0c3f46;
+    box-shadow: none;
+}
+
+.abut img{
+    width: 35%;
+    height: 100%;
+    border-radius: 54%;
+}
+
+.abu-img{
+    width:400px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: url(/Hotil/images/photo_2023-01-05_19-20-11.webp);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 20px 0px 5px rgb(255 0 0 / 40%), 1px 20px 0px 20px #000;
+    animation: abu-img 3.7s linear infinite;
+}
+
+@keyframes abu-img {
+    0%,100%{
+        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+        box-shadow: inset 0px 0px 20px 10px #8bc34a;
+    }
+
+    33%{
+        border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+        box-shadow: inset 0px 0px 20px 10px rgb(255 229 0);
+    }
+
+    66%{
+        border-radius: 100% 56% 72% 100% / 100% 100% 56% 56%;
+        box-shadow: inset 0px 0px 20px 10px rgb(0 39 255);
+    }
+}
+
+.EXTERNAL-SCENCE{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-06_15-22-08.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.EXTERNAL-SCENCE h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateY(10px);
+    padding: 10px;
+}
+
+
+.photo-scence img{
+    width: 24%;
+    height: 300px;
+    margin: .3%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 50px;
+    filter: blur(1.3px);
+}
+
+.photo-scence img:hover{
+    transform: translate(-5px, -15px);
+    transition: .5s;
+    filter: none;
+    box-shadow: 8px 8px 10px 0px #607d8b;
+}
+
+.room{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-06_23-35-19.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.room h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateY(10px);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.photo-room{
+    position: relative;
+    transform: translateY(-50px);
+
+}
+
+.photo-room img{
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000e0;
+}
+
+.photo-room .left{
+    position: absolute;
+    top: 40%;
+    right: -5%;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+    height: 45px;
+    width: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #000000e0;
+}
+
+.photo-room button:hover{
+    outline: none;
+    box-shadow: 0px 0px 5px 0px #000000e0;
+    transform: scale(1.2);
+}
+
+.photo-room button:focus{
+    background-color: #009688;
+    box-shadow: 0px 0px 0px 0px #000000e0;
+    color: #fff;
+}
+
+.photo-room .right{
+    position: absolute;
+    top: 40%;
+    left: -5%;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+    height: 45px;
+    width: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #000000e0;
+
+}
+
+
+button.book-naw{
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: cursive;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    background: #000000;
+    border: 2px solid #ffeb3b00;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    transform: translate(200px, -100px);
+    transition: transform 150ms cubic-bezier(0,0,0.58,1), 150ms cubic-bezier(0,0,0.58,1);
+}
+
+button.book-naw a{
+    color:#fff;
+}
+
+button.book-naw::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #002a2652;
+    border-radius: inherit;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0,0,0.58,1), 150ms cubic-bezier(0,0,0.58,1);
+}
+
+button.book-naw:hover{
+    background: #242424;
+    transform: translate(200px , -103px);
+}
+
+button.book-naw:hover:before{
+    box-shadow: 0 0.5em 0 0 #00968830;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.book-naw:active{
+    background: #5e5d5d;
+    transform: translate(200px, -95px);
+}
+
+button.book-naw:active:before{
+    transform: translate3d(0, 0, -1em);
+}
+
+.Restaurants{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-20_15-57-25.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+    /* color: #fff; */
+    gap: 10px;
+}
+
+.Restaurants h1{
+    display: flex;
+    text-align: center;
+    background: #607D8B;
+    border-radius: 42% 56% 72% 28% / 42% 42% 50% 48%;
+}
+
+.Restaurants div{
+    overflow: hidden;
+    border-radius: 10px;
+    border-top: 4px #607d8b solid;
+    padding: 5px;
+    width: 30%;
+}
+
+.Restaurants img{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: .7s;
+}
+
+.Restaurants img:hover{
+    transform: scale(1.4);
+}
+
+.food{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-22_16-18-26.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+    /* color: #fff; */
+}
+
+.food h1 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+    padding: 10px;
+    /* border-bottom: 10px solid #ffc823; */
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #070707;
+    /* text-decoration-style: wavy; */
+}
+
+.food div{
+    width: 100%;
+    display: flex;
+    height: 200px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.food img{
+    width: 17%;
+    height: 80%;
+    border-radius: 50%;
+    
+
+}
+
+.food img:hover{
+    transform: rotate(360deg) scale(1.25);
+    transition: .7s;
+}
+
+.food p{
+    text-align: center;
+    border-bottom: 5px solid #607d8b;
+    border-top: 5px solid #607d8b;
+    border-radius: 50%;
+    font-size: x-large;
+}
+
+.Book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.book{
+    /* width: 698px; */
+    height: 250px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #2e3c4385;
+    width: 80%;
+    box-shadow: 0px 0px 5px 0px #3F51B5;
+    padding: 10px;
+}
+
+.book form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.book form input {
+    outline: none;
+    border: solid #6e8e9d;
+    border-radius: 10px;
+    background-color: #c61d2300;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.book button{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    /* width: 140px; */
+    font-size: larger;
+    background-color: #2f4345;
+    color: #7e7e7e;
+    box-shadow: 0px 3px 1px 1px #000;
+    transition: .2s;
+}
+
+.book button:active {
+    box-shadow: 0px 1px 0px 0px #000;
+    transform: translate(0px, 5px);
+    color: #fff;
+}
+
+::placeholder{
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    
+}
+
+
+footer{
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    color: #a5a5a5;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    margin-top: 100px;
+}
+
+footer h1{
+    color: #fff;
+}
+
+footer a{
+    color: #a5a5a5;
+}
+
+footer img{
+    width: 100px;
+    height: 50px;
+}
+
+footer div{
+    display: grid;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: space-around;
+}
+
+footer button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: xxx-large;
+    overflow: hidden;
+    text-align: center;
+    background-color: #000000;
+    box-shadow: inset 0px 20px 0px 0px #ffffff;
+    border: 0;
+    color: #a5a5a5;
+    transition: .5s;
+}
+
+footer button:hover{
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
+    transform: scale(1.2);
+}
+
+footer button:active{
+    box-shadow: inset 0px -20px 0px 0px #ffffff;
+}
+
+.copy{
+    display: none;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCURE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="/Hotil/images/photo_2023-01-06_19-14-45.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/cotact-us.css">
+</head>
+<body>
+
+    <header>
+        <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="180px" height="90px">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <label for="input-1">
+                        <a href="index.html"></a>
+                        <input type="radio" id="input-1" name="group" checked>
+                        <span class="btn">
+                            <a href="index.html"><i class="btn-icon fa-solid fa-house"></i></a>
+                            <span class="btn-text">
+                                <a href="index.html">HOME</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-2">
+                        <a href="sign in.html"></a>
+                        <input type="radio" id="input-2" name="group" >
+                        <span class="btn">
+                            <a href="sign in.html"><i class="btn-icon fa-solid fa-contact-card"></i></a>
+                            <span class="btn-text">
+                                <a href="sign in.html">SIGN UP</a>
+                                
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-3">
+                        <a href="#"></a>
+                        <input type="radio" id="input-3" name="group" >
+                        <span class="btn">
+                            <a href="#"><i class="btn-icon fa-solid fa-location-arrow"></i></a>
+                            <span class="btn-text">
+                                <a href="#">CONTACT US</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-4">
+                        <a href="location-dr.html"></a>
+                        <input type="radio" id="input-4" name="group" >
+                        <span class="btn">
+                            <a href="location-dr.html"><i class="btn-icon fa-solid fa-moon"></i></a>
+                            <span class="btn-text">
+                                <a href="location-dr.html">DARK</a> 
+                            </span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <main>
+        <section class="map">
+            <div class="location">
+                <h1>LOCATION HOTEL <i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+                <p>This quiet beachfront hotel is located on Timsah Lake, 3 km from the Suez Canal and 118 km from Cairo International Airport. <br><br>
+                    The warm rooms have balconies overlooking the lake or the garden, as well as minibars, air conditioning, flat-screen TVs and free Wi-Fi.Room service is available 24/7. <br><br>
+                    The hotel has free parking.There is also an outdoor swimming pool, a private beach, a sauna and a gym, as well as gardens, sports fields and a children's playground. <br><br>
+                    Other amenities include 2 bars (one by the pool), 3 simple restaurants, as well as space for meetings and events. <br><br>
+                    Breakfast is served (at an additional cost).
+                </p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.710928298013!2d32.288324700000004!3d30.5857048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f8594808a17409%3A0xa0b58f85a1cbfb6f!2z2YHZhtiv2YIg2YXZitix2YPZitmI2LEg2KzYstmK2LHYqSDYp9mE2YHYsdiz2KfZhiDYp9mE2KXYs9mF2KfYudmK2YTZitip!5e0!3m2!1sar!2seg!4v1682993836841!5m2!1sar!2seg"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="address">Address : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="20%">
+            <h4>ABOUT US</h4>
+            <h4>SIGN UP</h4>
+            <h4>CONTACT US</h4>
+        </div>
+        <div>
+            <h1>Social Media</h1>
+            <h4><a href="#">facbook <i class="fa fa-facebook" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></h4>
+        </div>
+        <div>
+            <h1>Address & phone </h1>
+            <h4><i class="fa fa-map-marker" aria-hidden="true"></i> : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia    </h4>
+            <h4><i class="fa fa-phone" aria-hidden="true"></i> : 0643916318</h4>
+        </div>
+        <div>
+            <a href="#"><button>⬆</button></a>
+        </div>
+    </footer>
+    
+</body>
+</html>    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCURE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="/Hotil/images/MERCURE/PNG.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Home.css">
+</head>
+<body>
+    <header>
+        <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="180px" height="90px">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <label for="input-1">
+                        <a href="#"></a>
+                        <input type="radio" id="input-1" name="group" checked>
+                        <span class="btn">
+                            <a href="#"><i class="btn-icon fa-solid fa-house"></i></a>
+                            <span class="btn-text">
+                                <a href="#">HOME</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-2">
+                        <a href="sign in.html"></a>
+                        <input type="radio" id="input-2" name="group" >
+                        <span class="btn">
+                            <a href="sign in.html"><i class="btn-icon fa-solid fa-contact-card"></i></a>
+                            <span class="btn-text">
+                                <a href="sign in.html">SIGN UP</a>
+                                
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-3">
+                        <a href="contact us.html"></a>
+                        <input type="radio" id="input-3" name="group" >
+                        <span class="btn">
+                            <a href="contact us.html"><i class="btn-icon fa-solid fa-location-arrow"></i></a>
+                            <span class="btn-text">
+                                <a href="contact us.html">CONTACT US</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-4">
+                        <a href="Home-dark.html"></a>
+                        <input type="radio" id="input-4" name="group" >
+                        <span class="btn">
+                            <a href="Home-dark.html"><i class="btn-icon fa-solid fa-moon"></i></a>
+                            <span class="btn-text">
+                                <a href="Home-dark.html">DARK</a> 
+                            </span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <main>
+        
+        <section-2 class="about">
+            <div><h1>ABOUT US</h1></div>
+        </section-2>
+        <section-3 class="abut">
+            
+                <div class="continer">
+                
+                    <h1>ABOUT HOTEL <i class="fa fa-hotel" aria-hidden="true"></i></h1>
+                
+                    <p>This quiet beachfront hotel is located on Timsah Lake, 3 km from the Suez Canal and 118 km from Cairo International Airport.
+                       The warm rooms have balconies overlooking the lake or the garden, as well as minibars, air conditioning, flat-screen TVs and free Wi-Fi. Room service is available 24/7.
+                     The hotel has free parking. There is also an outdoor swimming pool, a private beach, a sauna and a gym, as well as gardens, sports fields and a children's playground. Other amenities include 2 bars (one by the pool), 3 simple restaurants, as well as space for meetings and events. Breakfast is served (at an additional cost).</p>
+                </div>
+
+                <div class="abu-img"></div>
+
+            
+        </section-3>
+
+        <section-4 class="EXTERNAL-SCENCE">
+            <h1>EXTERNAL SCENCE</h1>
+            <div class="photo-scence">
+                <img src="/Hotil/images/photo_2023-01-05_19-53-21.webp" alt="photo_2023-01-05_19-53-21">
+                <img src="/Hotil/images/photo_2023-01-05_19-53-41.webp" alt="photo_2023-01-05_19-53-41">
+                <img src="/Hotil/images/photo_2023-01-05_19-54-50.webp" alt="photo_2023-01-05_19-54-50">
+                <img src="/Hotil/images/photo_2023-01-05_19-54-07.webp" alt="photo_2023-01-05_19-54-07">
+            </div>
+        </section-4>
+
+        <section-5 class="room">
+            <h1>ROOMS</h1>
+            <div class="photo-room">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-04.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-10.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-15.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-20.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-26.webp" alt="">
+                <img class="mySlides" src="/Hotil/images/photo_2023-01-06_17-35-30.webp" alt="">
+                <img class="mySlides" src="/Hotil/images/photo_2023-01-06_17-35-35.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-41.webp" alt="">
+                <button class="right" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="left"  onclick="plusDivs(+1)">&#10095;</button>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      x[slideIndex-1].style.display = "block";  
+                    }
+                </script>
+
+            </div>
+
+            <a href="#5555"><button class="book-naw"><a href="#5555">BOOK NOW</a></button></a>
+            
+
+        </section-5>
+
+        <section-6 class="Restaurants">
+            <h1>Resting Places</h1>
+            <div><h2>cafe</h2><img src="images/photo_2023-01-20_15-48-47.webp" alt=""></div>
+            <div><h2>Buffe </h2><img src="images/photo_2023-01-20_15-56-55.webp" alt=""></div>
+            <div><h2>Restaurant</h2> <img src="images/photo_2023-01-20_15-57-13.webp" alt=""></div>
+
+        </section-6>
+
+        <section-7 class="food">
+            <h1>FOOD</h1>
+            
+            <div>
+                <img src="images/photo_2023-01-22_16-36-55.webp" alt="">
+                <img src="images/photo_2023-01-22_16-37-09.webp" alt="">
+                <img src="images/photo_2023-01-22_16-37-22.webp" alt="">
+                <img src="images/photo_2023-01-22_16-38-03.webp" alt="">
+            </div>
+            <p>Please call at least 30 minutes in advance for catering requests</p>
+
+        </section-7>
+
+        <section-8 id="5555" class="Book">
+            <div class="book">
+                <h2>Book now</h2>
+                <p>what are you Looking up-to</p>
+                <form>
+                    <h3>USER NAME <br><input class="name" type="text" placeholder="name"></h3>
+                    <h3>check in <br><input class="check-sin" type="date" placeholder=""></h3>
+                    <h3>check out <br><input class="check-out" type="date" placeholder=""></h3>
+                    <h3>guests <br><input class="guests" type="number" placeholder="0"></h3>                    
+                </form>
+                <button>YOUR PERFECT HOTEL - JUST A CLICK AWAY</button>
+            </div>
+        </section-8>
+    </main>
+    
+    <footer>
+        <div>
+            <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="20%">
+            <h4>ABOUT US</h4>
+            <h4>SIGN UP</h4>
+            <h4>CONTACT US</h4>
+        </div>
+        <div>
+            <h1>Social Media</h1>
+            <h4><a href="#">facbook <i class="fab fa-facebook" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">instagram <i class="fab fa-instagram" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">twitter <i class="fab fa-twitter" aria-hidden="true"></i></a></h4>
+        </div>
+        <div>
+            <h1>Address & phone </h1>
+            <h4><i class="fa fa-map-marker" aria-hidden="true"></i> : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia    </h4>
+            <h4><i class="fa fa-phone" aria-hidden="true"></i> : 0643916318</h4>
+        </div>
+        <div>
+            <a href="#"><button>⬆</button></a>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCURE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="/Hotil/images/photo_2023-01-06_19-14-45.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/location-dr.css">
+</head>
+<body>
+
+    <header>
+        <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="180px" height="90px">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <label for="input-1">
+                        <a href="Home-dark.html"></a>
+                        <input type="radio" id="input-1" name="group" checked>
+                        <span class="btn">
+                            <a href="Home-dark.html"><i class="btn-icon fa-solid fa-house"></i></a>
+                            <span class="btn-text">
+                                <a href="Home-dark.html">HOME</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-2">
+                        <a href="sign-up-dr.html"></a>
+                        <input type="radio" id="input-2" name="group" >
+                        <span class="btn">
+                            <a href="sign-up-dr.html"><i class="btn-icon fa-solid fa-contact-card"></i></a>
+                            <span class="btn-text">
+                                <a href="sign-up-dr.html">SIGN UP</a>
+                                
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-3">
+                        <a href="#"></a>
+                        <input type="radio" id="input-3" name="group" >
+                        <span class="btn">
+                            <a href="#"><i class="btn-icon fa-solid fa-location-arrow"></i></a>
+                            <span class="btn-text">
+                                <a href="#">location</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-4">
+                        <a href="contact us.html"></a>
+                        <input type="radio" id="input-4" name="group" >
+                        <span class="btn">
+                            <a href="contact us.html"><i class="btn-icon fa-solid fa-sun"></i></a>
+                            <span class="btn-text">
+                                <a href="contact us.html">LIGHT</a> 
+                            </span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <main>
+        <section class="map">
+            <div class="location">
+                <h1>LOCATION HOTEL <i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+                <p>This quiet beachfront hotel is located on Timsah Lake, 3 km from the Suez Canal and 118 km from Cairo International Airport. <br><br>
+                    The warm rooms have balconies overlooking the lake or the garden, as well as minibars, air conditioning, flat-screen TVs and free Wi-Fi.Room service is available 24/7. <br><br>
+                    The hotel has free parking.There is also an outdoor swimming pool, a private beach, a sauna and a gym, as well as gardens, sports fields and a children's playground. <br><br>
+                    Other amenities include 2 bars (one by the pool), 3 simple restaurants, as well as space for meetings and events. <br><br>
+                    Breakfast is served (at an additional cost).
+                </p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.710928298013!2d32.288324700000004!3d30.5857048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f8594808a17409%3A0xa0b58f85a1cbfb6f!2z2YHZhtiv2YIg2YXZitix2YPZitmI2LEg2KzYstmK2LHYqSDYp9mE2YHYsdiz2KfZhiDYp9mE2KXYs9mF2KfYudmK2YTZitip!5e0!3m2!1sar!2seg!4v1682993836841!5m2!1sar!2seg"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="address">Address : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia
+                </p>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div>
+            <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="20%">
+            <h4>ABOUT US</h4>
+            <h4>SIGN UP</h4>
+            <h4>CONTACT US</h4>
+        </div>
+        <div>
+            <h1>Social Media</h1>
+            <h4><a href="#">facbook <i class="fa fa-facebook" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></h4>
+        </div>
+        <div>
+            <h1>Address & phone </h1>
+            <h4><i class="fa fa-map-marker" aria-hidden="true"></i> : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia    </h4>
+            <h4><i class="fa fa-phone" aria-hidden="true"></i> : 0643916318</h4>
+        </div>
+        <div>
+            <a href="#"><button>⬆</button></a>
+        </div>
+    </footer>
+    
+</body>
+</html>    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCURE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="/Hotil/images/photo_2023-01-06_19-14-45.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/sign in.css">
+</head>
+<body>
+
+    <header>
+        <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="180px" height="90px">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <label for="input-1">
+                        <a href="index.html"></a>
+                        <input type="radio" id="input-1" name="group" checked>
+                        <span class="btn">
+                            <a href="index.html"><i class="btn-icon fa-solid fa-house"></i></a>
+                            
+                            <span class="btn-text">
+                                <a href="index.html">HOME</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-2">
+                        <a href="#"></a>
+                        <input type="radio" id="input-2" name="group" >
+                        <span class="btn">
+                            <a href="#"><i class="btn-icon fa-solid fa-contact-card"></i></a>
+                            <span class="btn-text">
+                                <a href="#">SIGN UP</a>
+                                
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-3">
+                        <a href="contact us.html"></a>
+                        <input type="radio" id="input-3" name="group" >
+                        <span class="btn">
+                            <a href="contact us.html"><i class="btn-icon fa-solid fa-location-arrow"></i></a>
+                            <span class="btn-text">
+                                <a href="contact us.html">CONTACT US</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-4">
+                        <a href="sign-up-dr.html"></a>
+                        <input type="radio" id="input-4" name="group" >
+                        <span class="btn">
+                            <a href="sign-up-dr.html"><i class="btn-icon fa-solid fa-moon"></i></a>
+                            <span class="btn-text">
+                                <a href="sign-up-dr.html">DARK</a> 
+                            </span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="sign-up">
+            <h1>SIGN UP YOUR ACCOUNT</h1>
+            <form>
+                <input class="name" type="text" placeholder="user name"name="use name" required="">
+                <input class="email" type="email" placeholder="email"name="email" required="">
+                <input class="favourite" type="password" placeholder="password"name="password" pattern="[0-9]{5,10}" required="">                
+            </form>
+            <button>SIGN UP</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="180px" height="90px">
+            <h4>ABOUT US</h4>
+            <h4>SIGN UP</h4>
+            <h4>CONTACT US</h4>
+        </div>
+        <div>
+            <h1>Social Media</h1>
+            <h4><a href="#">facbook <i class="fa fa-facebook" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></h4>
+        </div>
+        <div>
+            <h1>Address & phone </h1>
+            <h4><i class="fa fa-map-marker" aria-hidden="true"></i> : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia    </h4>
+            <h4><i class="fa fa-phone" aria-hidden="true"></i> : 0643916318</h4>
+        </div>
+        <div>
+            <a href="#"><button>⬆</button></a>
+        </div>
+    </footer>
+    
+
+</body>
+</html>    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCURE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="/Hotil/images/photo_2023-01-06_19-14-45.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/sign-up-dr.css">
+</head>
+<body>
+
+    <header>
+        <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="180px" height="90px">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <label for="input-1">
+                        <a href="Home-dark.html"></a>
+                        <input type="radio" id="input-1" name="group" checked>
+                        <span class="btn">
+                            <a href="Home-dark.html"><i class="btn-icon fa-solid fa-house"></i></a>
+                            
+                            <span class="btn-text">
+                                <a href="Home-dark.html">HOME</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-2">
+                        <a href="#"></a>
+                        <input type="radio" id="input-2" name="group" >
+                        <span class="btn">
+                            <a href="#"><i class="btn-icon fa-solid fa-contact-card"></i></a>
+                            <span class="btn-text">
+                                <a href="#">SIGN UP</a>
+                                
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-3">
+                        <a href="location-dr.html"></a>
+                        <input type="radio" id="input-3" name="group" >
+                        <span class="btn">
+                            <a href="location-dr.html"><i class="btn-icon fa-solid fa-location-arrow"></i></a>
+                            <span class="btn-text">
+                                <a href="location-dr.html">CONTACT US</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-4">
+                        <a href="sign in.html"></a>
+                        <input type="radio" id="input-4" name="group" >
+                        <span class="btn">
+                            <a href="sign in.html"><i class="btn-icon fa-solid fa-sun"></i></a>
+                            <span class="btn-text">
+                                <a href="sign in.html">LIGHT</a> 
+                            </span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="sign-up">
+            <h1>SIGN UP YOUR ACCOUNT</h1>
+            <form>
+                <input class="name" type="text" placeholder="user name"name="use name" required="">
+                <input class="email" type="email" placeholder="email"name="email" required="">
+                <input class="favourite" type="password" placeholder="password"name="password" pattern="[0-9]{5,10}" required="">                
+            </form>
+            <button>SIGN UP</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="20%">
+            <h4>ABOUT US</h4>
+            <h4>SIGN UP</h4>
+            <h4>CONTACT US</h4>
+        </div>
+        <div>
+            <h1>Social Media</h1>
+            <h4><a href="#">facbook <i class="fa fa-facebook" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></h4>
+        </div>
+        <div>
+            <h1>Address & phone </h1>
+            <h4><i class="fa fa-map-marker" aria-hidden="true"></i> : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia    </h4>
+            <h4><i class="fa fa-phone" aria-hidden="true"></i> : 0643916318</h4>
+        </div>
+        <div>
+            <a href="#"><button>⬆</button></a>
+        </div>
+    </footer>
+    
+
+</body>
+</html>    
